@@ -4,8 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background-color: whitesmoke;
+        }
+        .line
+        {
+            background-color:#584cc0;
+            height: 90px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px;
+            color: white;
+        }
+        .line span
+        {
+            font-size: 20px;
+            color: white;
+        }
+        .line span:hover
+        {
+          background-color: blue;
+        }
+        .line a
+        {
+            text-decoration: none;
+            color:white;
+        }
+        .big
+        {
+            width: 1200px;
+            height: 500px;
+            margin: 100px auto 100px auto;
+            background-color:white;
+            position: relative;
+           border: 1px;
+        }
+        .s
+        {
+            height: 120px;
+            margin-top: 0;
+            margin-bottom: 0;
+           display: flex;
+           justify-content: space-around;
+            width: 600px; 
+            margin: auto;
+            color: black;
+           line-height: 120px;
+        }
+        .s a{
+            text-decoration: none;
+        }
+        .s span:hover
+        {
+            border-bottom: 2px solid #f7954c;
+            font-weight: 700;
+        }
+        .small
+        {
+            width: 1200px;
+            height: 400px;
+            background-color:white;
+            display: flex;
+            justify-content: space-around;
+        }
+        .f
+        {
+            font-size: 25px;
+             margin-top: 50px;
+             color: #3a30b6;
+              height:50px;
+              margin-left: 86.677px;
+        }
+        .i
+        {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            align-items: center;
+            margin-top: 0;
+            font-size: 25px;
+        }
+        .i a 
+        {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .i span:hover
+        {
+            color: white;
+            background-color:#584cc0;
+        }
+        .img
+        {
+            width: 800px;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto 0 auto;
+        }
+        .m 
+        {
+            width: 200px;
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
-    123
+    <div class="line">
+        <span><img src="tupian.png" style="width: 60px;height: 50px;"></span>
+        
+            <span><a href="#">首页</a></span>
+            <span><a href="#">部门介绍</a></span>
+            <span><a href="#">购买产品</a></span>
+            <span><a href="#">毕业去向</a></span>
+            <span><a href="#">加入我们</a></span>
+        
+        <input type="search" style="width: 200px;height: 30px;border-radius: 30px;">
+    </div>
+    <div class="f">产品分析</div>
+    <div class="big">
+        
+        <div class="s">
+            <div><span><a href="#">产品定位</a></span></div>
+            <div><span><a href="#">主要功能</a></span></div>
+            <div><span><a href="#">用户体验</a></span></div>
+        </div>
+        <div class="small"> 
+        <div class="i">
+            <div style="margin-top: 15px;"><span><a href="#">重邮小帮手</a></span></div>
+            <div style="margin-top: 15px;"><span><a href="#">掌上重邮</a></span></div>
+            <div style="margin-top: 15px;"><span><a href="#">网址大全</a></span></div>
+            <div style="margin-top: 15px;"><span><a href="#">弹幕系统</a></span></div>
+            <div style="margin-top: 15px;"><span><a href="#">青春邮约</a></span></div>
+        </div>
+        <div class="img">
+            <div class="m"><img src="img1.png" style="width: 200px;height: 150px;"><strong>课表查询</strong><br>课表查询大众传播记者才能看出的的,市残联号的残骸的V城市产生了才能</div>
+            <div class="m"><img src="img2.png" style="width: 200px;height: 150px;"><strong>课表查询</strong><br>课表查询大众传播记者才能看出的的,市残联号的残骸的V城市产生了才能</div>
+            <div class="m"><img src="img3.png" style="width: 200px;height: 150px;"><strong>课表查询</strong><br>课表查询大众传播记者才能看出的的,市残联号的残骸的V城市产生了才能</div>
+        </div>
+    </div>
+
+    </div>
+
 </body>
 </html>
