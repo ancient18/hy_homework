@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [ [1,2] , 3,[4,[5,[6]] , 7] ]
+
+function even(arr){
+  let mm = "";
+  let ww = "";
+  for(var i = 0; i < arr.length; i++) {
+      mm += arr[i];
+  }
+  for(var i = 0; i < mm.length; i++) {
+      if(mm[i] !== ',') {
+          ww += mm[i];
+      }
+      
+  }
+  
+  ww = ww.split('');
+  for(var i = 0; i < ww.length; i++) {
+      ww[i] = parseFloat(ww[i])
+  }
+  console.log(ww);
+}
+
+even(arr)   // [1,2,3,4,5,6,7]
+    </script>
+</body>
+</html>
