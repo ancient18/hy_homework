@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .num {
+        display:inline-block;
+        border:1px solid black;
+        background-color:red;
+           }
+    </style>
+</head>
+<body>
+  <input id = "input"/>
+  <button id = "left-in">左侧入</button>
+  <button id = "right-in">右侧入</button>
+  <button id = "left-out">左侧出</button>
+  <button id = "right-out">右侧出</button>
+  <br/>
+  <div id = "container">
+  </div>
+  <script>
+      var value =document.getElementById('input').value;
+      var input =document.getElementById('input');
+      var leftInBtn=document.getElementById('left-in');
+      var rightInBtn=document.getElementById('right-in');
+      var leftOutBtn=document.getElementById('left-out');
+      var rightOutBtn=document.getElementById('right-out');
+      var container=document.getElementById('container');
+      var children =container.children;
+      input.addEventListener('change',function(){
+       value =input.value;
+      });
+      leftInBtn.addEventListener('click',function(){
+        container.insertAdjacentHTML('afterBegin',`<span class = "num">${value}</span>`);
+      });
+      rightInBtn.addEventListener('click',function(){
+        container.insertAdjacentHTML('beforeEnd',`<span class = "num">${value}</span>`);
+      });
+      leftOutBtn.addEventListener('click',function(){
+         container.removeChild(children[0]);
+      });
+      rightOutBtn.addEventListener('click',function(){
+         container.removeChild(children[children.length-1]);
+      });
+  </script>
+</body>
+</html>

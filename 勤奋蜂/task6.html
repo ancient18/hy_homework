@@ -1,0 +1,47 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            
+            <style>
+                #container{
+	margin:20px;
+}
+.btn{
+	width:80px;
+}
+
+#queue{
+	margin-top:5px;
+}
+.box{
+	display:inline-block;
+	width:auto;
+	height:40px;
+	background-color:#ff0000;
+	color:#fff;
+	font-size:20px;
+	text-align:center;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+            </style>
+        </head>
+        <body>
+            <div id="container">
+                <textarea id="inputValue" rows = "4" colos = "50"></textarea>
+                <button id="left_in_btn" class="btn">左侧入</button>
+                <button id="right_in_btn" class="btn">右侧入</button>
+                <button id="left_out_btn" class="btn">左侧出</button>
+                <button id="right_out_btn" class="btn">右侧出</button>
+                <input type=text id="inquiry_input">
+                <button id="inquiry" class="btn">查询</button>
+                <p id="queue">
+                </p>
+            </div>
+            <script src="./task6.js"></script>
+        </body>
+    </html>

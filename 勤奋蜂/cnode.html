@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+           
+        }
+        .header
+        {
+            height: 60px;
+            background-color: #444;
+        }
+        .logo
+        {
+            width: 196px;
+            height: 60px;
+            position: absolute;
+            
+            top: -5px;
+            left: 30px;
+        }
+        .logo a{
+            display: block;
+            width: 196px;
+            height: 60px;
+            background: url(./cnode.png) no-repeat;
+            font-size: 0px;
+        }
+        .search
+        {
+            position: absolute;
+            left: 200px;
+            top: 25px;
+            line-height: 20px;
+            color: #333;
+            word-break: break-word;
+            font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,sans-serif!important;
+            font-size: 13px;
+        }
+        .input
+        {
+            word-break: break-word;
+            min-height: 1px;
+            display: inline-block;
+            height: 20px;
+            vertical-align: middle;
+            width: 206px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin-bottom: 0;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1;
+            border-radius: 15px;
+            padding: 3px 5px 3px 22px;
+            background-color: #666;
+            border: 0;
+            margin-top: 2px;
+            transition: all .5s;
+            outline: none;
+            position: absolute;
+            left: 50px;
+            }
+        .input:hover{
+            background-color: white;
+        }
+    .hotwords
+    {
+                position: absolute;
+               right: 100px;
+                line-height: 30px;
+           top: 20px;
+    }
+    .hotwords a{
+            margin: 0 10px;
+           text-decoration: none;
+           word-break: break-word;
+           color: #ccc;
+        }
+    .hotwords a:hover{
+        color: white;
+    }
+    .body
+    {
+        background-color: #e1e1e1;
+       position: relative;
+       
+       height: 2100px;
+    }
+    .content
+    {
+        position: absolute;
+        left: 50px;
+        top: 10px;
+        background-color: white;
+        width: 1000px;
+        height: 2100px;
+    }
+    .right
+    {
+        position: absolute;
+        right: 50px;
+        width: 250px;
+        height: 120px;
+        background-color: white;
+        top: 10px;
+        line-height: 30px;
+    }
+    button
+    {
+        width: 150px;
+        height: 40px;
+        background-color: #5bc0de;
+        border: 0px;
+        border-radius: 5px;
+        outline: none;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+    }
+    .top
+    {
+        background-color: #f6f6f6;
+        height: 50px;
+    }
+    .top a{
+        margin: 10px 10px;
+           text-decoration: none;
+          display: inline-block;
+           color:  #80bd01;
+           border-radius: 3px;
+           padding: 5px;
+    }
+    .top a:visited{
+        background-color: #80bd01;
+    }
+    .top a:hover{
+        color: #08c;
+    }
+    li
+    {
+        list-style: none;
+    }
+    
+
+
+    .s
+      {
+        height: 30px;
+        padding: 10px;
+      }
+      .a,.b,.c,.d
+      {
+        float: left;
+        line-height: 30px;
+      }
+      .e
+      {
+        float: right;
+        line-height: 30px;
+      }
+      .f
+      {
+        font-size: 14px;
+        color: #9e78c0;
+      }
+      .g{
+        font-size: 10px;
+    color: #b4b4b4;
+      }
+      .d a{
+          color: black;
+      }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>
+                <a href="./cnode.html">cnode</a>
+            </h1>
+        </div>
+        <div class="search">
+            <input type="search" class="input">
+        </div>
+        <div class="hotwords">
+            <a href="#">首页</a>
+            <a href="#">新手入门</a>
+            <a href="#">API</a>
+            <a href="#">关于</a>
+            <a href="#">注册</a>
+            <a href="#">登录</a>
+        </div>
+    </div>
+    <div class="body">
+        
+           <div class="content">
+            <div class="top">
+                <a href="#">全部</a>
+                <a href="#">精华</a>
+                <a href="#">分享</a>
+                <a href="#">回答</a>
+                <a href="#">招聘</a>
+                <a href="#">客户端面试</a>
+            </div>
+            <ul></ul>
+           </div>
+           <div class="right">
+               <p1>CNode：Node.js专业中文社区</p1>
+               <p2>您可以 <a href="#" style="color: #778087; text-decoration: none;">登录</a> 或 <a href="#" style="color: #778087;text-decoration: none;">注册</a> , 也可以</p2>
+              
+              <button>通过 GitHub 登录</button>
+              
+           </div>
+    </div>
+    <script src="./cnode.js"></script>
+</body>
+</html>
