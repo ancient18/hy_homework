@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌单</title>
+    <link rel="stylesheet" href="./songlist.css">
+    <link rel="stylesheet" href="./navigation.css">
+</head>
+<body>
+    <!--语义化标签-->
+    <!-- 导航栏 -->
+    <header>
+        <div class="Header">
+            <div class="logo">
+                <h1>
+                    <a href="./wyy.html">网易云音乐</a>
+                </h1>
+            </div>
+            <div class="hotwords">
+                <a href="#">发现音乐</a>
+                <a href="./tab.html">我的音乐</a>
+                <a href="#">朋友</a>
+                <a href="#">商城</a>
+                <a href="#">音乐人</a>
+                <a href="#">下载客户端</a>
+            </div>
+            <div class="search">
+                <div class="fa-search"></div>
+                <input type="search" class="input" oninput="sosuo()"  placeholder="音乐/视频/电台/用户" >
+               
+            </div>
+            <div class="czz">创作者中心</div>
+            <a class="dl" href="#">登录</a>
+        </div>
+            
+            
+    </header>
+
+
+<!-- 红条 -->
+<div class="ht">
+    <div>
+    <a href="./wyy.html">推荐</a>
+    <a href="#">排行榜</a>
+    <a href="#" id="gd1" style="background-color: #9b0909;">歌单</a>
+    <a href="#">主播电台</a>
+    <a href="#">歌手</a>
+    <a href="#">新碟上架</a>
+    </div>
+</div>
+
+<!--登陆界面  -->
+<div class="register">
+    <div class="register1">
+        <div class="big1">
+            <div class="xiao1">
+         <div class="dl1"><strong>手机号登录</strong></div>
+         <button class="cha1">×</button>
+        </div>
+         <div class="small1">
+             <div class="sjh1">手机号</div>
+             <div><input class="p1" style="width: 100%;height: 30px;border-radius: 5px; border: 1px gray solid;" type="text" placeholder="11位手机号"></div>
+             <div class="mm1">
+                 <span>密码</span>
+    
+        </div>
+        <div><input class="p1" style="width: 100%;height: 30px;border-radius: 5px ;border: 1px gray solid;" type="password" placeholder="请输入密码"></div>
+        <button class="b1">登录</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="Big">
+    <div class="all">
+        <div class="Qb">全部</div>
+        <div class="Lm"><button>热门</button></div>
+        <div class="hr1"></div>
+    </div>
+
+    <div class="content">
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+        <div class="img">
+            <div class="number">
+                <img src="./ej.png" class="ej">
+                <p style="color:#ccccb9;"></p>
+                <img src="./bf.png" class="bf">
+            </div>
+            <a href="#" class="a" target="blank">网易云音乐</a>
+            <span><a href="#" target="blank"></a></span>
+        </div>
+    </div>
+</div>
+    
+<script src="./songlist.js"></script>
+<script src="./register.js"></script>
+<script src="./search.js"></script>
+
+</body>
+</html>
