@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function save(fn){
+        return fn;
+      }
+      var num=0;
+
+      function add(arg){
+        if(typeof(arg)=="number"){
+          num += arg;
+        }else{
+          return num;
+        }
+      }
+      var add= save(add);
+      add(100);
+      add(200);
+      console.log(add()); // 300
+
+      
+    </script>
+  </body>
+</html>
