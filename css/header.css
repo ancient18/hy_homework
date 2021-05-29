@@ -1,0 +1,173 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+img,
+a {
+  -webkit-touch-callout: none;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  
+}
+
+.bighead {
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  position: absolute;
+}
+
+.head {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
+.head .left {
+  position: absolute;
+  left: 8px;
+  top: 15px;
+  width: 22px;
+  height: 22px;
+  background: url(../images/left-icon.png);
+  background-size: 22px;
+}
+
+.head .right {
+  position: absolute;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  margin-top: 15px;
+  background: url(../images/jump.png);
+  background-size: 22px;
+}
+
+.head .middle {
+  text-align: center;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.head .middle::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  padding-bottom: 3px;
+  background: url(../images/position.png);
+  background-size: 16px;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.logo {
+  position: relative;
+  width: 100%;
+  height: 410px;
+  /* background-color: blueviolet; */
+}
+
+.logo .left {
+  position: absolute;
+  width: 14px;
+  height: 28px;
+  font-size: 12px;
+  background-color: #a3d765;
+  border-radius: 8px;
+  top: 67px;
+  left: 8px;
+  padding: 8px 12px 8px 12px;
+  text-align: center;
+  color: #fff;
+  line-height: 15px;
+}
+
+.logo .right {
+  position: absolute;
+  width: 56px;
+  height: 24px;
+  background-color: red;
+  padding-left: 6px;
+  padding-right: 6px;
+  right: 0;
+  top: 67px;
+}
+
+.logo .middle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -120px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+}
+
+.logo .middle .temperature {
+  font-size: 50px;
+  text-indent: 20px;
+}
+
+.logo .middle .weather {
+  font-size: 20px;
+}
+
+.logo .words {
+  position: absolute;
+  width: 70%;
+  text-align: center;
+  color: #fff;
+  top: 70%;
+  left: 50%;
+  margin-left: -35%;
+  
+}
+
+.background-img {
+  position: absolute;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  height: 450px;
+  top: 40px;
+  background: url(../images/bg02.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  
+}
+
+.background-color{
+  width: 100%;
+  height: 450px;
+  margin-bottom: 26px;
+  background-image: linear-gradient(-90deg, #3bbcff, #4af4ff);
+  background-image: -webkit-linear-gradient(-90deg, #3bbcff, #4af4ff);
+}

@@ -1,0 +1,287 @@
+.day{
+    display: flex;
+    width: 100%;
+    height: 76px;
+    padding-top: 26px;
+    color: #434343;
+    font-size: 14px;
+    justify-content: space-around;
+}
+
+.day .left,.day .right{
+    position: relative;
+    width: 40%;
+    height: 52px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff;
+}
+
+.day .middle{
+    width: 1px;
+    height: 50px;
+    background-color: #f0f0f0;
+}
+
+.day .left .today, .day .right .today{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.day .left .tem , .day .right .tem{
+    position: absolute;
+    top: 0;;
+    right: 10px;
+}
+
+.day .left .wea, .day .right .wea{
+    position: absolute;
+    bottom: 0;;
+    left: 10px;
+}
+
+.day .left .sun{
+    position: absolute;
+    border: 1px;
+    bottom: 0;
+    right: 5px;
+    width: 28px;
+    height: 20px;
+    background: url(../images/day/yu.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.day .right .sun{
+    position: absolute;
+    border: 1px;
+    bottom: 0;
+    right: 5px;
+    width: 28px;
+    height: 20px;
+    background: url(../images/day/yun.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.time-weather{
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 105px;
+    /* padding: 30px; */
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.time-weather .big{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 400%;
+    height: 105px;
+    background-color: yellow;
+   
+}
+
+
+.time-weather .big div{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    text-align: center;
+    width: 15%;
+    height: 80px;
+    background-color: green;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.time-weather .big div .time{
+    margin: 0;
+    background-color: greenyellow;
+    width: 100%;
+    height: 12px;
+}
+
+.time-weather .big div .weather{
+    margin: 0;
+    background-color: grey;
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+
+.time-weather .big div .tem{
+    text-indent: 5px;
+    margin: 0;
+    background-color: hotpink;
+    width: 100%;
+    height: 14px;
+}
+
+.line-img{
+    position: relative;
+    width: 100%;
+    height: 364px;
+    background-color: lavender;
+    overflow: hidden;
+
+}
+
+.line-img .big{
+
+    width: 133%;
+    height: 364px;
+}
+
+.line-img .big ul{
+    padding: 0;
+    margin: 0;
+}
+
+.line-img .big ul li{
+    width: 12.5%;
+    height: 364px;
+    float: left;
+    background-color: red;
+    list-style: none;
+    border: 1px solid;
+}
+
+.line-img .big ul li p{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.line-img .big ul li .wea{
+    text-align: center;
+}
+
+.chart{
+    position: absolute;
+    top: 50%;
+    margin-top: -68px;
+    width: 100%;
+    height: 136px;
+    background-color: greenyellow;
+   
+}
+
+.suit{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 188px;
+    text-align: center;
+}
+
+.suit div{
+    /* background-color: yellow; */
+    background-color: #ffffff;
+    flex: 24%;
+    border: 1px solid #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.suit div div{
+    border: 0;
+}
+
+.suit div .top{
+    margin: 0;
+    /* background-color: greenyellow; */
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    
+    
+}
+
+.suit div .middle{
+    margin: 0;
+    font-size: 14px;
+    /* background-color: grey; */
+    width: 100%;
+    height: 24px;
+    align-self: center;
+    line-height: 24px;
+}
+
+.suit div .bottom{
+    margin: 0;
+    /* background-color: hotpink; */
+    width: 100%;
+    height: 14px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.suit div:nth-child(1) .top{
+    background: url(../images/cloth.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+}
+
+.suit div:nth-child(2) .top{
+    background: url(../images/umbrella.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+}
+
+.suit div:nth-child(3) .top{
+    background: url(../images/cold.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+}
+
+.suit div:nth-child(4) .top{
+    background: url(../images/washcar.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+}
+
+.suit div:nth-child(5) .top{
+    background: url(../images/sports.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+}
+
+.suit div:nth-child(6) .top{
+    background: url(../images/sun.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+}
+
+.suit div:nth-child(7) .top{
+    background: url(../images/diaoyu.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+}
+
+.suit div:nth-child(8) .top{
+    background: url(../images/lvyou.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    margin-top: 8px;
+}
